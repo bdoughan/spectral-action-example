@@ -1,7 +1,6 @@
 name: 'Test oasdiff actions'
 on:
   pull_request:
-  push:
 jobs:
   rest-guidelines-check:
     name: Run Spectral Linter
