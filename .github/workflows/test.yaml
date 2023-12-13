@@ -1,0 +1,14 @@
+name: 'Test oasdiff actions'
+on:
+  pull_request:
+  push:
+jobs:
+  rest-guidelines-check:
+    name: Run Spectral Linter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: stoplightio/spectral-action@v0.8.10
+        with:
+          file_glob: ./specs/invalid.yaml
+          spectral_ruleset: ./specs/spectral-rules.yaml
