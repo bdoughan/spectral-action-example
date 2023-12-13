@@ -1,2 +1,7 @@
+openapi: 3.0.3
 info:
   version: v1
+  title: Example.com
+tags:
+  - name: Echo
+    description: Example echo operations
