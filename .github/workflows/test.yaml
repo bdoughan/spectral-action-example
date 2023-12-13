@@ -10,5 +10,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: stoplightio/spectral-action@v0.8.10
         with:
-          file_glob: specs/invalid.yaml
-          spectral_ruleset: specs/spectral-rules.yaml
+          file_glob: ./specs/invalid.yaml
+          spectral_ruleset: ./specs/spectral-rules.yaml
