@@ -1,7 +1,13 @@
 openapi: 3.0.3
+openapi: 3.0.0
 info:
   version: v1
-  title: Example.com
-tags:
-  - name: Echo
-    description: Example echo operations
+  title: Sample API
+  description: A sample API to illustrate OpenAPI concepts
+paths:
+  /list:
+    get:
+      description: Returns a list of stuff              
+      responses:
+        '200':
+          description: Successful response
