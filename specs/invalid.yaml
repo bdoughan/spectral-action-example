@@ -3,10 +3,19 @@ info:
   version: v1
   title: Sample API
   description: A sample API to illustrate OpenAPI concepts
+  contact:
+    name: bdoughan
+servers:
+ - url: https://www.example.com
+tags:
+ - name: Stuff
 paths:
   /list:
     get:
       description: Returns a list of stuff              
+      operationId: getStuff
+      tags:
+       - Stuff
       responses:
         '200':
           description: Successful response
